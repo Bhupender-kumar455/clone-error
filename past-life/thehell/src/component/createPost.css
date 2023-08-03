@@ -1,0 +1,42 @@
+.createPost{
+    max-width: 500px;
+    margin: 10px auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.main-div{
+    border-top:1px solid grey;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#post-btn{
+    border: none;
+    color: violet;
+    background: none;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.details{
+    border-top: 1px solid grey;
+}
+textarea{
+    width: 95%;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+}
+#output{
+    width: 90%;
+    height: 50%;
+    border: none;
+    outline: none;
+}
+.card-pic img{
+    margin-left: 10px;
+    margin-top: 5px;
+}

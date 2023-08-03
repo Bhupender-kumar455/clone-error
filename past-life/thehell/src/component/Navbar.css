@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(68, 68, 68, 0.4);
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(120deg, #e0aaff, #e0aaff,#9d4edd);
+   
+    
+}
+
+ .logo {
+    width: 130px;
+    mix-blend-mode: multiply;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.navbar-nav {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-nav a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
