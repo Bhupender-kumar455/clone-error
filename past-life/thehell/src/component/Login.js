@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 
 export default function Login() {
   const [email, setEmail] = useState("");
-  const navigate = useNavigate();
+  const navigate = useNavigate("");
+  const [url, setUrl] = useState("");
   const [password, setPassword] = useState("");
   const notifyA = (error) => {
     toast.error(error, { position: toast.POSITION.TOP_CENTER });
@@ -35,14 +36,16 @@ export default function Login() {
       }),
     })
       .then((res) => res.json())
+
       .then((data) => {
         if (data.error) {
           notifyA(data.error);
         } else {
           notifyB(data.message);
+          console.log(data);
+          localStorage.setItem("jwt", data);
           navigate("/");
         }
-        console.log(data);
       });
   };
 
